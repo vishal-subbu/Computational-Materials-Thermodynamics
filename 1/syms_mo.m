@@ -1,3 +1,13 @@
+%
+% Copyright (c) 2018, Vishal_S
+% All rights reserved. Please read the "license.txt" for license terms.
+%
+% Project Title: Computational Materials Thermodynamics
+% 
+% Developer: Vishal S
+% 
+% Contact Info: vishalsubbu97@gmail.com
+%
 syms R Tc temp tau m n f beta K_ferro K_para
 cp_mo = 2*K_ferro*R*(tau^m + tau^(3*m)/3 + tau^(5*m)/5);
 enthalpy_mo = 2*K_ferro*R*temp*((tau^m)/(m+1) + tau^(3*m)/(3*(3*m+1)) + tau^(5*m)/(5*(5*m+1)));
