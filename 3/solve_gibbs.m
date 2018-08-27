@@ -1,3 +1,13 @@
+%
+% Copyright (c) 2018, Vishal_S
+% All rights reserved. Please read the "license.txt" for license terms.
+%
+% Project Title: Computational Materials Thermodynamics
+% 
+% Developer: Vishal S
+% 
+% Contact Info: vishalsubbu97@gmail.com
+%
 fun = @gibbs;
 y1 = fsolve(fun,0.5)
 y2 = (comp_of_al*(a1+a2) - a1*y1)/(a2)
