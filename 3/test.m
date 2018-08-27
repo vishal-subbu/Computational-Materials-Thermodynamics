@@ -1,4 +1,13 @@
-
+%
+% Copyright (c) 2018, Vishal_S
+% All rights reserved. Please read the "license.txt" for license terms.
+%
+% Project Title: Computational Materials Thermodynamics
+% 
+% Developer: Vishal S
+% 
+% Contact Info: vishalsubbu97@gmail.com
+%
 a1         = 0.5;
 a2         = 0.5;
 comp_of_al = 0.4;
