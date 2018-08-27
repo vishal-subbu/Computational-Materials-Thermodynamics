@@ -1,0 +1,28 @@
+
+go dat
+sw user MoZr.TDB
+def-sys Mo Zr
+
+get dat
+
+go poly
+
+s-c T=1000 N=1 P=1E5 x(Zr)=0.1234
+l-c
+
+c-eq
+l-eq ,,,,
+@?
+
+s-a-v 1 X(Zr) 0 1,,
+s-a-v 2 T 300 3000,,
+map
+
+po
+plot
+
+SET_TIELINE_STATUS 5
+plot
+
+set_interactive
+

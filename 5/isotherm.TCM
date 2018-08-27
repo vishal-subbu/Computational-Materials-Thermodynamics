@@ -1,0 +1,25 @@
+go dat
+sw user cost507B
+def-sys Al Mg Si
+get_dat
+
+go poly
+
+s-c P=1E5 n=1 t=1000 x(mg)=0.2 x(si)=0.1
+l-c
+c-eq
+l-eq,,,,
+s-a-v 1 x(mg) 0 1,,
+s-a-v 2 x(si) 0 1,,
+map
+po
+s-d-t y
+
+s-d-a x x(Mg)
+s-d-a y x(Si)
+
+s-s-s x n 0 1
+s-s-s y n 0 1
+pl
+
+set_inter

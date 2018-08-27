@@ -1,0 +1,46 @@
+go dat
+sw user TiZr.TDB
+def-sys Ti Zr
+get
+
+go poly
+ 
+ 
+s-c P=1E5 t=1000 n=1 x(zr)=0.1234
+l-c
+
+change_stat phases *=sus
+change_stat phases liq=ent
+1 
+c-eq
+l-eq,,
+ 
+set_ref
+Ti
+liq
+*
+1E5
+set_ref
+Zr
+liq
+*
+1E5
+ 
+ 
+s-a-v 1 x(zr) 0 1,,
+step
+NORMAL
+ 
+ 
+po
+s-d-a x x(zr) 
+s-d-a y HMR(liq)
+pl
+app_exp_dat
+y AllData.exp
+1
+1,2,3,4
+ 
+pl
+ 
+set_inter

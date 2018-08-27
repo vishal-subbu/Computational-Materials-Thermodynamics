@@ -1,0 +1,24 @@
+go dat
+sw user cost507B.TDB
+def-sys Al Mg Si
+get
+go poly
+s-c t=1000 p=1E5 n=1 x(mg)=0.1234 x(si)=0.1234
+l-c
+c-eq
+l-eq
+SCREEN
+VWCS
+ 
+ 
+s-a-v 1 x(mg) 0 1 0.001
+s-a-v 2 x(si) 0 1 0.001
+map
+po
+pl
+s-d-t y
+pl
+
+ 
+
+set_inter
